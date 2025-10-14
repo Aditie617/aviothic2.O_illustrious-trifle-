@@ -6,7 +6,7 @@
 **Category:** Software / Web Application  
 
 🔗 **Live Demo:** 
-(https://illustrious-trifle-6317.netlify.app)
+SOON
 
 
 
