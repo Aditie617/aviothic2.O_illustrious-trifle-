@@ -1,0 +1,190 @@
+/* Background & General Layout */
+body {
+  background-color: #8B008B; /* soft mauve */
+  color: white;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 40px 10px; /* adds breathing space */
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  position: relative;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px; /* vertical space between sections */
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Cake Centering */
+.cake-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+/* Cake Design */
+.cake {
+  position: relative;
+  width: 140px;
+  height: 120px;
+  cursor: pointer;
+  filter: drop-shadow(0px 0px 20px "#ff90b3");
+}
+
+.candles {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.candles .flame {
+  width: 8px;
+  height: 12px;
+  background: orange;
+  border-radius: 50%;
+  display: none;
+  animation: flicker 0.3s infinite alternate;
+}
+
+@keyframes flicker {
+  0% { opacity: 0.7; transform: scaleY(0.8); }
+  100% { opacity: 1; transform: scaleY(1.2); }
+}
+
+.cake .body {
+  width: 100%;
+  height: 70px;
+  background: #813e5d;
+  border-radius: 10px 10px 0 0;
+}
+
+.cake .base {
+  width: 120%;
+  height: 25px;
+  background: #ab784b;
+  margin-left: -10%;
+  border-radius: 5px;
+}
+
+#message {
+  margin: 10px 0 20px 0;
+  font-size: 1.1rem;
+}
+
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  padding-top: 100px;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background: #fff;
+  color: #333;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  animation: pop 0.3s ease-in-out;
+}
+
+@keyframes pop {
+  0% { transform: scale(0.7); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.close {
+  color: #888;
+  float: right;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Dino Game Box */
+.game-box {
+  background: #e89eb8;
+  color: #31273b;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 20px;
+  width: fit-content;
+  margin: 10px auto;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+.game-box:hover {
+  background: #f6f2ff;
+  transform: scale(1.05);
+}
+
+/* Confetti Canvas */
+#confetti-canvas {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* Pomodoro Timer */
+.pomodoro-section {
+  text-align: center;
+  margin-top: 40px;
+  padding-bottom: 60px; /* ensures it's visible fully when scrolled */
+}
+
+#pomodoroBtn, #startTimerBtn {
+  background-color: #e89eb8;
+  color: #31273b;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+#pomodoroBtn:hover, #startTimerBtn:hover {
+  background-color: #f6f2ff;
+  transform: scale(1.05);
+}
+
+#pomodoroContainer {
+  margin-top: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 15px;
+  display: inline-block;
+}
+
+#timerDisplay {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Smooth scroll for Pomodoro reveal */
+html {
+  scroll-behavior: smooth;
+}

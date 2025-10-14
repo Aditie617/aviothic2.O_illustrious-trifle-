@@ -1,0 +1,65 @@
+<body>
+  <div class="container">
+    <h1>🎉 Happy Birthday 🎉</h1>
+
+    <!-- Cake -->
+    <div class="cake-wrapper">
+      <div class="cake" id="cake">
+        <div class="candles" id="candles">
+          <div class="flame"></div>
+          <div class="flame"></div>
+          <div class="flame"></div>
+        </div>
+        <div class="body"></div>
+        <div class="base"></div>
+      </div>
+    </div>
+
+    <p id="message">Click the cake to light the candles</p>
+
+    <button id="openLetterBtn">💌 A small message for you</button>
+
+    <div id="letterModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeLetterBtn">×</span>
+        <h2>It's your day, my dear one 💖</h2>
+        <p>
+          I hope this year feels lighter on your heart <br><br>
+          and softer on your soul. May you stumble into moments that feel like peace<br><br>
+          and find yourself surrounded by people who make you feel safe to be your truest self.<br><br>
+          laughter that actually heals, and people who remind you how good <br><br>
+          it feels to just be understood.<br><br>
+          You deserve calm, joy, and everything that makes life quietly beautiful.<br><br>
+          Happy Birthday💗<br>
+          Lots of love<br><br>
+        </p>
+      </div>
+    </div>
+
+    <!-- Game Box -->
+    <div class="game-box" id="gameBox">
+      Click to Play Game
+    </div>
+
+    <!-- Pomodoro Timer -->
+    <div class="pomodoro-section">
+      <button id="pomodoroBtn">Start Pomodoro Timer</button>
+      <div id="pomodoroContainer" style="display: none;">
+        <h3>Pomodoro Timer</h3>
+        <label for="pomodoroInput">Enter time (minutes):</label>
+        <input type="number" id="pomodoroInput" min="1" value="25">
+        <button id="startTimerBtn">Start</button>
+        <div id="timerDisplay">00:00</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🎉 Confetti Canvas -->
+  <canvas id="confetti-canvas"></canvas>
+  
+  <link rel="stylesheet" href="style.css">
+
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
