@@ -65,12 +65,4 @@ Each element is designed to evoke togetherness, even miles apart.
 It shows that even small, beautifully built interactions can carry warmth, affection, and presence across physical boundaries.
 
 
-
-##  Team Illustrious Trifle
-
-| Role | Name |
-|------|------|
-| 👑 Team Leader | **Aditi Shukla** |
-| 💫 Team Member | **Vaishnavi Mathur** |
-
 > _“Solène — bridging hearts through digital celebration.”_
