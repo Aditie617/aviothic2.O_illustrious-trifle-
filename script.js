@@ -1,4 +1,4 @@
-// 🎂 flame lighting + Confetti
+
 const cake = document.getElementById("cake");
 const flames = document.querySelectorAll(".flame");
 const message = document.getElementById("message");
@@ -7,7 +7,7 @@ cake.addEventListener("click", () => {
   flames.forEach((f) => (f.style.display = "block"));
   message.textContent = "Make a wish 💫";
 
-  // 🎉 Confetti burst
+  //  Confetti
   for (let i = 0; i < 5; i++) {
     confetti({
       particleCount: 100,
@@ -24,7 +24,7 @@ cake.addEventListener("click", () => {
   }
 });
 
-// 💌 Modal
+// message
 const openLetterBtn = document.getElementById("openLetterBtn");
 const closeLetterBtn = document.getElementById("closeLetterBtn");
 const modal = document.getElementById("letterModal");
@@ -35,7 +35,7 @@ window.onclick = (e) => {
   if (e.target === modal) modal.style.display = "none";
 };
 
-// 🦖 Game Popup
+// Game Popup
 document.getElementById("gameBox").addEventListener("click", () => {
   const gameWindow = window.open("", "_blank", "width=500,height=300");
   gameWindow.document.write(`
@@ -53,7 +53,7 @@ document.getElementById("gameBox").addEventListener("click", () => {
     #score{font-size:18px;margin-bottom:8px;text-align:left}
     #game{width:100%;height:220px;border-radius:10px;border-bottom:6px solid #333;background:linear-gradient(180deg,#fff,#f4f6f9);position:relative;overflow:hidden}
     #dino{width:48px;height:48px;background:var(--dino);position:absolute;bottom:8px;left:60px;border-radius:8px;box-shadow:0 6px 14px rgba(43,44,66,0.12)}
-    #cactus{width:22px;height:48px;background:#7f5539;position:absolute;bottom:8px;left:100%;animation:move 2s linear infinite;border-radius:4px}
+    #cactus{width:22px;height:45px;background:#7f5539;position:absolute;bottom:8px;left:100%;animation:move 2s linear infinite;border-radius:4px}
     @keyframes move{0%{left:100%}100%{left:-40px}}
     .jump{animation:jump 0.42s ease-out}
     @keyframes jump{0%{bottom:8px}50%{bottom:110px}100%{bottom:8px}}
@@ -168,3 +168,4 @@ startTimerBtn.addEventListener("click", () => {
     time--;
   }, 1000);
 });
+
