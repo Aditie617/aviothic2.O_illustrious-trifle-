@@ -1,6 +1,6 @@
 
 body {
-  background-color: #8B008B; 
+  background-color: #a891a8; 
   color: white;
   font-family: "Poppins", sans-serif;
   text-align: center;
@@ -187,4 +187,5 @@ h1 {
 html {
   scroll-behavior: smooth;
 }
+
 
