@@ -1,38 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>🎉 Happy Birthday 🎉</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solène</title>
+  
+ 
+  <link rel="stylesheet" href="styles.css">
 
-  <!-- Keep your existing stylesheet -->
-  <link rel="stylesheet" href="style.css">
-
-  <style>
-    /* ✨ Background Image & Overlay — Safe Addition */
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: url('b8e868c3-5611-4b72-91e2-43702684d853.jpeg') center/cover no-repeat;
-      filter: brightness(0.6); /* darkens slightly for readability */
-      z-index: -2; /* ensures it stays behind everything */
-    }
-
-    body::after {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.35); /* subtle overlay */
-      z-index: -1;
-    }
-  </style>
+  
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3081/3081559.png">
 </head>
 
 <body>
@@ -81,7 +58,7 @@
     <!-- Pomodoro Timer -->
     <div class="pomodoro-section">
       <button id="pomodoroBtn">Start Pomodoro Timer</button>
-      <div id="pomodoroContainer" style="display: none;">
+      <div id="pomodoroContainer" styles="display: none;">
         <h3>Pomodoro Timer</h3>
         <label for="pomodoroInput">Enter time (minutes):</label>
         <input type="number" id="pomodoroInput" min="1" value="25">
@@ -94,7 +71,7 @@
   <!-- Confetti Canvas -->
   <canvas id="confetti-canvas"></canvas>
 
-  <!-- Your existing scripts -->
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
   <script src="script.js"></script>
 </body>
