@@ -5,43 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>🎉 Happy Birthday 🎉</title>
 
-  <!-- Your existing CSS -->
+  <!-- Keep your existing stylesheet -->
   <link rel="stylesheet" href="style.css">
 
   <style>
-    /* === Background + Overlay (added safely on top of your existing CSS) === */
-    body {
-      margin: 0;
-      padding: 0;
-      background: url('b8e868c3-5611-4b72-91e2-43702684d853.jpeg') no-repeat center center fixed;
-      background-size: cover;
-      position: relative;
-      overflow-x: hidden;
-      font-family: "Inter", system-ui, sans-serif;
-    }
-
-    .background-overlay {
+    /* ✨ Background Image & Overlay — Safe Addition */
+    body::before {
+      content: "";
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.55); /* darker overlay for readability */
-      z-index: -1;
+      background: url('b8e868c3-5611-4b72-91e2-43702684d853.jpeg') center/cover no-repeat;
+      filter: brightness(0.6); /* darkens slightly for readability */
+      z-index: -2; /* ensures it stays behind everything */
     }
 
-    /* Keeps your main content visible and centered */
-    .container {
-      position: relative;
-      z-index: 1;
+    body::after {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.35); /* subtle overlay */
+      z-index: -1;
     }
   </style>
 </head>
 
 <body>
-  <!-- New dark overlay behind everything -->
-  <div class="background-overlay"></div>
-
   <div class="container">
     <h1>🎉 Happy Birthday 🎉</h1>
 
@@ -100,7 +94,7 @@
   <!-- Confetti Canvas -->
   <canvas id="confetti-canvas"></canvas>
 
-  <!-- Scripts -->
+  <!-- Your existing scripts -->
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
   <script src="script.js"></script>
 </body>
