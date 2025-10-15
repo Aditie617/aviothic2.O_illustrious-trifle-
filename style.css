@@ -1,11 +1,11 @@
-/* Background & General Layout */
+
 body {
-  background-color: #8B008B; /* soft mauve */
+  background-color: #8B008B; 
   color: white;
   font-family: "Poppins", sans-serif;
   text-align: center;
   margin: 0;
-  padding: 40px 10px; /* adds breathing space */
+  padding: 40px 10px; 
   overflow-x: hidden;
   min-height: 100vh;
   display: flex;
@@ -18,7 +18,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px; /* vertical space between sections */
+  gap: 30px; 
 }
 
 h1 {
@@ -26,7 +26,7 @@ h1 {
   margin-bottom: 10px;
 }
 
-/* Cake Centering */
+/* Cake */
 .cake-wrapper {
   display: flex;
   justify-content: center;
@@ -86,7 +86,7 @@ h1 {
   font-size: 1.1rem;
 }
 
-/* Modal Styling */
+/* Message Styling */
 .modal {
   display: none;
   position: fixed;
@@ -151,7 +151,7 @@ h1 {
 .pomodoro-section {
   text-align: center;
   margin-top: 40px;
-  padding-bottom: 60px; /* ensures it's visible fully when scrolled */
+  padding-bottom: 60px; 
 }
 
 #pomodoroBtn, #startTimerBtn {
@@ -184,7 +184,7 @@ h1 {
   font-weight: bold;
 }
 
-/* Smooth scroll for Pomodoro reveal */
 html {
   scroll-behavior: smooth;
 }
+
